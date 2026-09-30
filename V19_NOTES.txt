@@ -1,0 +1,11 @@
+V19 — Cloud Office Data Expansion
+
+Added PostgreSQL tables and authenticated API endpoints for:
+- Customers
+- Vehicles (Truck / Heavy Machinery / Other Vehicle)
+- Payments
+- Invoices + Tax/VAT fields
+- Money Transfers
+- Company dashboard summary
+
+All queries are scoped by authenticated company_id. Write routes use module permissions for staff/manager access.

@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: my-transport
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: my-transport-db
+          property: connectionString
+
+databases:
+  - name: my-transport-db
+    plan: free

@@ -1,0 +1,5 @@
+MY TRANSPORT V17
+- Backend + PostgreSQL + JWT + bcrypt foundation included.
+- V16 frontend is included for continuity.
+- V17 is ready for deployment configuration, but no live cloud credentials are embedded.
+- Next production work: connect frontend authentication/trips to /api, add real Google OAuth, automated cloud backups, billing/subscriptions, HTTPS deployment and payment provider.
